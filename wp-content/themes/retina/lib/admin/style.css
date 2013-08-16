@@ -1,0 +1,177 @@
+/**
+|------------------------
+| =Clear Floated Elements
+|------------------------
+*/
+
+.retina-clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.retina-clearfix:before,
+.retina-clearfix:after {
+  content: '.';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+}
+
+.retina-clearfix:after {
+  clear: both;
+}
+
+.retina-clearfix {
+  zoom: 1;
+}
+
+/**
+|------------------------
+| =Options Form
+|------------------------
+*/
+
+#retina-form-wrapper {
+	background-color: #eeeeee;
+	border: 1px solid #e5e5e5;
+	margin-top: 20px;
+}
+
+#retina-form-header,
+#retina-form-footer {
+	text-align: right;
+	padding: 20px;	
+}
+
+#retina-form-header {
+	border-bottom: 1px solid #DFDFDF;
+}
+
+#retina-form-footer {
+	border-top: 1px solid #DFDFDF;
+}
+
+/**
+|------------------------
+| =Options Sidebar
+|------------------------
+*/
+
+#retina-sidebar,
+#retina-main {
+	min-height: 300px;
+}
+
+#retina-sidebar {
+	width: 200px;
+	float: left;
+}
+
+#retina-sidebar #retina-group-menu,
+#retina-sidebar #retina-group-menu li {
+	margin: 0;
+}
+
+#retina-sidebar #retina-group-menu li.divide {
+	padding: 0px;
+	border-width: 1px 0px 1px 0px;
+	border-style: solid;
+    border-bottom-color: #DFDFDF;
+    border-top-color: #F9F9F9;
+}
+
+#retina-sidebar #retina-group-menu li a {
+	display:block;
+	padding: 14px 14px;
+	background: #eeeeee;
+	border-top: solid 1px #F9F9F9;
+	border-right: solid 1px #DFDFDF;
+	border-bottom: solid 1px #DFDFDF;
+	border-left: none;
+	color: #333333;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+#retina-sidebar #retina-group-menu li a.custom-tab {
+	background: #f6f6f6;
+}
+
+#retina-sidebar #retina-group-menu li a img {
+	width: 16px;
+	height: 16px;
+	margin-bottom:-3px;
+}
+
+#retina-sidebar #retina-group-menu li a:hover {
+	background:#f9f9f9;
+}
+
+#retina-sidebar #retina-group-menu li.active a {
+	background:#ffffff;
+	border-right: none;
+}
+
+/**
+|------------------------
+| =Options Main
+|------------------------
+*/
+
+#retina-main {
+	background: #FFFFFF;
+	margin-left: 200px;
+	padding: 16px 20px 1px 20px;
+}
+
+.retina-group-tab {
+	display: none;
+}
+
+.retina-group-tab h3 {
+	margin: 0 0 18px 0;
+	padding: 0 0 18px 0;
+	border-bottom: 1px solid #DFDFDF;
+	font-size: 21px;
+	font-weight: normal;
+	line-height: 1.2;
+}
+
+.retina-group-tab .retina-section-desc {
+	font-style: italic;
+	border-bottom: 1px solid #DFDFDF;
+	padding: 0 0 18px 0;
+	margin: 0 0 30px 0;
+}
+
+.retina-group-tab .retina-section-desc p.description {
+	margin: 0;
+	padding: 0;
+}
+
+/**
+|------------------------
+| =Options Form Table
+|------------------------
+*/
+
+.retina-group-tab .form-table {
+	clear: none;
+}
+
+.retina-group-tab .form-table th {
+	font-weight: bold;
+	padding: 0 0 30px 0;
+}
+
+.retina-group-tab .form-table td {
+	padding: 0 0 30px 0;
+}
